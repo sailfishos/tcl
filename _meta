@@ -1,0 +1,15 @@
+<package project="Mer:Trunk:Base" name="tcl">
+  <title>Tool Command Language, pronounced tickle</title>
+  <description>The Tcl (Tool Command Language) provides a powerful platform for
+creating integration applications that tie together diverse
+applications, protocols, devices, and frameworks. When paired with the
+Tk toolkit, Tcl provides a fastest and powerful way to create
+cross-platform GUI applications.  Tcl can also be used for a variety
+of web-related tasks and for creating powerful command languages for
+applications.
+
+
+
+</description>
+  <url>http://tcl.sourceforge.net/</url>
+</package>

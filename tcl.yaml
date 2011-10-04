@@ -1,0 +1,48 @@
+Name: tcl
+Summary: Tool Command Language, pronounced tickle
+Version: 8.5.8
+Release: 4
+Group: Development/Languages
+License: TCL
+URL: http://tcl.sourceforge.net/
+Sources:
+    - http://downloads.sourceforge.net/sourceforge/tcl/tcl%{version}-src.tar.gz
+Patches:
+    - tcl-8.5.1-autopath.patch
+    - tcl-8.5.0-conf.patch
+    - tcl-8.5.0-hidden.patch
+    - tcl-8.5.7-sigabrt.patch
+Description: |
+    The Tcl (Tool Command Language) provides a powerful platform for
+    creating integration applications that tie together diverse
+    applications, protocols, devices, and frameworks. When paired with the
+    Tk toolkit, Tcl provides a fastest and powerful way to create
+    cross-platform GUI applications.  Tcl can also be used for a variety
+    of web-related tasks and for creating powerful command languages for
+    applications.
+
+PkgBR:
+    - autoconf
+Provides:
+    - tcl(abi) = %{majorver}
+SourcePrefix: "%{name}%{version}"
+Configure: reconfigure
+ConfigOptions:
+    - --disable-threads 
+    - --enable-symbols 
+    - --enable-shared
+Builder: none
+SubPackages:
+    - Name: devel
+      Summary: Tcl scripting language development environment
+      Group: Development/Languages
+      Description: |
+          The Tcl (Tool Command Language) provides a powerful platform for
+          creating integration applications that tie together diverse
+          applications, protocols, devices, and frameworks. When paired with the
+          Tk toolkit, Tcl provides a fastest and powerful way to create
+          cross-platform GUI applications.  Tcl can also be used for a variety
+          of web-related tasks and for creating powerful command languages for
+          applications.
+          
+          The package contains the development files and man pages for tcl.
