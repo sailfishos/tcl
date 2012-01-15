@@ -1,3 +1,6 @@
+* Sun Jan 15 2012 Carsten Munk <carsten.munk@gmail.com> - 8.5.8
+- Add patch for MIPS, mips-tclstrtod.patch
+
 * Mon May 16 2011 Junfeng Dong <junfeng.dong@intel.com> - 8.5.8
 - build with TCL_NO_STACK_CHECK (run out of stack space with gcc 4.6).
 

@@ -12,6 +12,7 @@ Patches:
     - tcl-8.5.0-conf.patch
     - tcl-8.5.0-hidden.patch
     - tcl-8.5.7-sigabrt.patch
+    - mips-tclstrtod.patch
 Description: |
     The Tcl (Tool Command Language) provides a powerful platform for
     creating integration applications that tie together diverse
